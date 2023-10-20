@@ -86,9 +86,9 @@
                 <label for="operator">Operator:</label>
                 <select class="form-control" name="operator" id="operator">
                     <option value="tambah">+</option>
-                    <option value="kurang">-</option>
-                    <option value="kali">*</option>
-                    <option value="bagi">/</option>
+                    <option value="pengurangan">-</option>
+                    <option value="perkalian">*</option>
+                    <option value="pembagi">/</option>
                 </select>
             </div>
             <div class="form-group">
@@ -106,11 +106,11 @@
 
             if ($operator == "tambah") {
                 $hasil = $angka1 + $angka2;
-            } elseif ($operator == "kurang") {
+            } elseif ($operator == "pengurangan") {
                 $hasil = $angka1 - $angka2;
-            } elseif ($operator == "kali") {
+            } elseif ($operator == "perkalian") {
                 $hasil = $angka1 * $angka2;
-            } elseif ($operator == "bagi") {
+            } elseif ($operator == "pembagi") {
                 if ($angka2 == 0) {
                     echo "<p class='result'>Pembagian dengan nol tidak valid.</p>";
                 } else {
@@ -127,7 +127,7 @@
         ?>
     </div>
 
-    <!-- Tautan ke Bootstrap JavaScript (Jika Anda memerlukan komponen JavaScript Bootstrap) -->
+    <!-- Tautan ke Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
