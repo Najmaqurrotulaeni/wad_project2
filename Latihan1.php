@@ -11,7 +11,6 @@
     echo 'selamat datang';
     $input_angkat=4;
     $input_string='String';
-    echo '$input_string';
     ?>
 </body>
 </html>
